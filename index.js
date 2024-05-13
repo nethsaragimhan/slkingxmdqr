@@ -34,8 +34,6 @@ const MESSAGE = process.env.MESSAGE ||  `
 
 
 
-console.log('SLKINGXMD')
-
 if (fs.existsSync('./auth_info_baileys')) {
     fs.emptyDirSync(__dirname + '/auth_info_baileys');
   };
